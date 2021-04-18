@@ -14,12 +14,12 @@ def index():
     # print(mars)
     return render_template("index.html", data=mars_data)
 
-@app.route("/scrape")
+@app.route("/scrape_mars.py")
 def scrape():  
-    mars_scrape = scrape_mars.scrape()
-    print(mars_scrape)
-    mongo.db.mars.update({}, mars_scrape, upsert=True)
-    return redirect("/")
+    mars_data = mongo.db.mars_data
+    mars_data = scrape_mars.scrape_info()
+    mongo.db.mars_data.update({}, mars_data, upsert=True)
+    return redirect("/",code=302)
 
 if __name__ == "__main__":
     app.run(debug=True)

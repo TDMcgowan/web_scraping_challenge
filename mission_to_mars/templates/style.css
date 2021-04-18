@@ -1,0 +1,38 @@
+body{
+    background-color: rgb(19, 18, 18)
+}
+
+nav{
+    background-color: rgb(15, 15, 15);
+    border-bottom: 1px solid gray;
+}
+
+.navbar-brand{
+    background: rgb(4, 75, 107);
+
+}
+
+.max-temp{
+    height:auto;
+    max-width: 50%;
+}
+
+.card-title{
+    color: rgb(13, 68, 94);
+}
+
+.btn{
+    background-color:black;
+}
+
+.container{
+    background-color: rgb(245, 158, 87);
+}
+
+.comp-title{
+    color: rgb(71, 73, 73);
+}
+
+.card-deck-title{
+    color: rgb(70, 71, 71);
+}
